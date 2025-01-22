@@ -8,11 +8,12 @@ import StudentClass from './StudentClass';
 import HideShowToggle from './HideShowToggle';
 import GetInputTextValue from './GetInputTextValue';
 import HandleFormFields from './HandleFormFields';
+import ConditionalRendering from './ConditionalRendering';
 
 function App(){
       return (  
       <div className="App">
-          <HandleFormFields/>
+          <ConditionalRendering/>
       </div>
     );
 }
