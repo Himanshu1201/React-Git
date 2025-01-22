@@ -7,11 +7,12 @@ import FunctionalStudent from './FunctionalStudent';
 import StudentClass from './StudentClass';
 import HideShowToggle from './HideShowToggle';
 import GetInputTextValue from './GetInputTextValue';
+import HandleFormFields from './HandleFormFields';
 
 function App(){
       return (  
       <div className="App">
-          <GetInputTextValue/>
+          <HandleFormFields/>
       </div>
     );
 }
