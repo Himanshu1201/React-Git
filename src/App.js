@@ -1,5 +1,3 @@
-import logo from './logo.svg';
-import './App.css';
 import React, { useState, Component } from 'react';
 import FunctionComponentUser from './FunctionComponentUser';
 import ClassComponentUser from './ClassComponentUser';
@@ -9,11 +7,16 @@ import HideShowToggle from './HideShowToggle';
 import GetInputTextValue from './GetInputTextValue';
 import HandleFormFields from './HandleFormFields';
 import ConditionalRendering from './ConditionalRendering';
+import BasicFormValidation from './BasicFormValidation';
+import PassFunctionAsProps from './PassFunctionAsProps';
 
 function App(){
+    function getData(){
+        alert("Hello from App");
+    }
       return (  
       <div className="App">
-          <ConditionalRendering/>
+          <PassFunctionAsProps data={getData}/>
       </div>
     );
 }
