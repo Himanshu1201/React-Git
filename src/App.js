@@ -14,11 +14,12 @@ import ClassLifeCycleMethod from './ClassLifeCylceMethod';
 import UpdatingComponentCycle from './UpdatingComponentCycle';
 import RenderMethodLifeCycle from './RenderMethodLifeCycle';
 import ComponentDidMountMethod from './ComponentDidMountMethod';
+import ComponentDidUpdateLife from './ComponentDidUpdateLife';
 
 function App(){
       return (  
       <div className="App">
-          <ComponentDidMountMethod/>
+          <ComponentDidUpdateLife/>
       </div>
     );
 }
