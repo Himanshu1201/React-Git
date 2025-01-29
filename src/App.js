@@ -1,3 +1,4 @@
+import './App.css';
 import React, { useState, Component } from 'react';
 import FunctionComponentUser from './FunctionComponentUser';
 import ClassComponentUser from './ClassComponentUser';
@@ -12,13 +13,12 @@ import PassFunctionAsProps from './PassFunctionAsProps';
 import ClassLifeCycleMethod from './ClassLifeCylceMethod';
 import UpdatingComponentCycle from './UpdatingComponentCycle';
 import RenderMethodLifeCycle from './RenderMethodLifeCycle';
+import ComponentDidMountMethod from './ComponentDidMountMethod';
 
 function App(){
-    const[name, setName] = useState("Himanshu");
       return (  
       <div className="App">
-          <RenderMethodLifeCycle name={name}/>
-          <button onClick={()=>setName("Kumar")}> Update Data</button>
+          <ComponentDidMountMethod/>
       </div>
     );
 }
