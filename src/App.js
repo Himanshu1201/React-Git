@@ -9,14 +9,16 @@ import HandleFormFields from './HandleFormFields';
 import ConditionalRendering from './ConditionalRendering';
 import BasicFormValidation from './BasicFormValidation';
 import PassFunctionAsProps from './PassFunctionAsProps';
+import ClassLifeCycleMethod from './ClassLifeCylceMethod';
+import UpdatingComponentCycle from './UpdatingComponentCycle';
+import RenderMethodLifeCycle from './RenderMethodLifeCycle';
 
 function App(){
-    function getData(){
-        alert("Hello from App");
-    }
+    const[name, setName] = useState("Himanshu");
       return (  
       <div className="App">
-          <PassFunctionAsProps data={getData}/>
+          <RenderMethodLifeCycle name={name}/>
+          <button onClick={()=>setName("Kumar")}> Update Data</button>
       </div>
     );
 }
