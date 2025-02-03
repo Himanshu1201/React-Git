@@ -15,13 +15,27 @@ import UpdatingComponentCycle from './UpdatingComponentCycle';
 import RenderMethodLifeCycle from './RenderMethodLifeCycle';
 import ComponentDidMountMethod from './ComponentDidMountMethod';
 import ComponentDidUpdateLife from './ComponentDidUpdateLife';
+import ShouldComponentUpdate from './ShouldComponentUpdate';
+import ComponentWillUnmountLife from './ComponentWillUnmountLife';
 
-function App(){
-      return (  
-      <div className="App">
-          <ComponentDidUpdateLife/>
-      </div>
-    );
+class App extends Component{
+    constructor(){
+        super();
+        this.state = {
+            show: true
+        }
+    }
+      render(){
+        return(
+            <div className='App'>
+                {
+                    this.state.show ? <ComponentWillUnmountLife/> : <h4>child Component removed</h4>
+                }
+
+                <button onClick={()=> this.setState({show:!this.state.show})}> Toggle Child Component</button>
+            </div>
+        )
+      }
 }
 
 export default App;
