@@ -18,11 +18,12 @@ import ComponentDidUpdateLife from './ComponentDidUpdateLife';
 import ShouldComponentUpdate from './ShouldComponentUpdate';
 import ComponentWillUnmountLife from './ComponentWillUnmountLife';
 import HooksIntro from './HooksIntro';
+import UseEffectTutorial from './UseEffectTutorial';
 
 function App(){ 
         return(
             <div className='App'>
-                < HooksIntro/>
+                < UseEffectTutorial/>
             </div>
         )
       }
