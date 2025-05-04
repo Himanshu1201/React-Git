@@ -20,15 +20,12 @@ import ComponentWillUnmountLife from './ComponentWillUnmountLife';
 import HooksIntro from './HooksIntro';
 import UseEffectTutorial from './UseEffectTutorial';
 import UseEffectWithStateProps from './UseEffectWithStateProps';
+import StyleInReact from './StyleInReact';
 
 function App(){ 
-    const[data, setData] = useState(10);
-    const[count, setCount] = useState(100);
         return(
             <div className='App'>
-                < UseEffectWithStateProps count={count} data={data}/>
-                <button onClick={()=> setCount(count+1)}> Update Counter </button>
-            <button onClick={()=> setData(data+1)}> Update Data </button>
+                < StyleInReact/>
             </div>
         )
       }
