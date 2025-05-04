@@ -21,11 +21,12 @@ import HooksIntro from './HooksIntro';
 import UseEffectTutorial from './UseEffectTutorial';
 import UseEffectWithStateProps from './UseEffectWithStateProps';
 import StyleInReact from './StyleInReact';
+import HandleArrayWithList from './HandleArrayWithList';
 
 function App(){ 
         return(
             <div className='App'>
-                < StyleInReact/>
+                < HandleArrayWithList/>
             </div>
         )
       }
