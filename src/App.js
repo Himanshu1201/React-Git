@@ -17,25 +17,14 @@ import ComponentDidMountMethod from './ComponentDidMountMethod';
 import ComponentDidUpdateLife from './ComponentDidUpdateLife';
 import ShouldComponentUpdate from './ShouldComponentUpdate';
 import ComponentWillUnmountLife from './ComponentWillUnmountLife';
+import HooksIntro from './HooksIntro';
 
-class App extends Component{
-    constructor(){
-        super();
-        this.state = {
-            show: true
-        }
-    }
-      render(){
+function App(){ 
         return(
             <div className='App'>
-                {
-                    this.state.show ? <ComponentWillUnmountLife/> : <h4>child Component removed</h4>
-                }
-
-                <button onClick={()=> this.setState({show:!this.state.show})}> Toggle Child Component</button>
+                < HooksIntro/>
             </div>
         )
       }
-}
 
 export default App;
