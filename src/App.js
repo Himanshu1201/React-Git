@@ -19,11 +19,12 @@ import ShouldComponentUpdate from './ShouldComponentUpdate';
 import ComponentWillUnmountLife from './ComponentWillUnmountLife';
 import HooksIntro from './HooksIntro';
 import UseEffectTutorial from './UseEffectTutorial';
+import UseEffectWithStateProps from './UseEffectWithStateProps';
 
 function App(){ 
         return(
             <div className='App'>
-                < UseEffectTutorial/>
+                < UseEffectWithStateProps/>
             </div>
         )
       }
