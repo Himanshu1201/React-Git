@@ -25,11 +25,16 @@ import HandleArrayWithList from './HandleArrayWithList';
 import HandleArrayListWithBootstrap from './HandleArrayListWithBootstrap';
 import NestedArrayist from './NestedArrayList';
 import ReuseComponent from './ReuseComponent';
+import TransferChildToParent from './TransferChildToParent';
 
 function App(){ 
+        function parenrAlert(data){
+            console.log(data);
+            alert(data.name);
+        }
         return(
             <div className='App'>
-                < ReuseComponent/>
+                < TransferChildToParent alert={parenrAlert}/>
             </div>
         )
       }
