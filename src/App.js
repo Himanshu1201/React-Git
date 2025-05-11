@@ -24,11 +24,12 @@ import StyleInReact from './StyleInReact';
 import HandleArrayWithList from './HandleArrayWithList';
 import HandleArrayListWithBootstrap from './HandleArrayListWithBootstrap';
 import NestedArrayist from './NestedArrayList';
+import ReuseComponent from './ReuseComponent';
 
 function App(){ 
         return(
             <div className='App'>
-                < NestedArrayist/>
+                < ReuseComponent/>
             </div>
         )
       }
