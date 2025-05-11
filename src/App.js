@@ -23,11 +23,12 @@ import UseEffectWithStateProps from './UseEffectWithStateProps';
 import StyleInReact from './StyleInReact';
 import HandleArrayWithList from './HandleArrayWithList';
 import HandleArrayListWithBootstrap from './HandleArrayListWithBootstrap';
+import NestedArrayist from './NestedArrayList';
 
 function App(){ 
         return(
             <div className='App'>
-                < HandleArrayListWithBootstrap/>
+                < NestedArrayist/>
             </div>
         )
       }
