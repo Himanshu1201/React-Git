@@ -22,11 +22,12 @@ import UseEffectTutorial from './UseEffectTutorial';
 import UseEffectWithStateProps from './UseEffectWithStateProps';
 import StyleInReact from './StyleInReact';
 import HandleArrayWithList from './HandleArrayWithList';
+import HandleArrayListWithBootstrap from './HandleArrayListWithBootstrap';
 
 function App(){ 
         return(
             <div className='App'>
-                < HandleArrayWithList/>
+                < HandleArrayListWithBootstrap/>
             </div>
         )
       }
