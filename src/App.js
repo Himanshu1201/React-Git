@@ -28,11 +28,12 @@ import ReuseComponent from './ReuseComponent';
 import TransferChildToParent from './TransferChildToParent';
 import PureComponentInReact from './PureComponentInReact';
 import UseMemoHookTut from './UseMemoHookTut';
+import RefInReact from './RefInReact';
 
 function App(){ 
         return(
             <div className='App'>
-                < UseMemoHookTut />
+                < RefInReact />
             </div>
         )
       }
