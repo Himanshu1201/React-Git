@@ -26,15 +26,13 @@ import HandleArrayListWithBootstrap from './HandleArrayListWithBootstrap';
 import NestedArrayist from './NestedArrayList';
 import ReuseComponent from './ReuseComponent';
 import TransferChildToParent from './TransferChildToParent';
+import PureComponentInReact from './PureComponentInReact';
+import UseMemoHookTut from './UseMemoHookTut';
 
 function App(){ 
-        function parenrAlert(data){
-            console.log(data);
-            alert(data.name);
-        }
         return(
             <div className='App'>
-                < TransferChildToParent alert={parenrAlert}/>
+                < UseMemoHookTut />
             </div>
         )
       }
