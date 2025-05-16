@@ -1,5 +1,5 @@
 import './App.css';
-import React, { useState, Component } from 'react';
+import React, { useState, Component, useRef } from 'react';
 import FunctionComponentUser from './FunctionComponentUser';
 import ClassComponentUser from './ClassComponentUser';
 import FunctionalStudent from './FunctionalStudent';
@@ -30,13 +30,25 @@ import PureComponentInReact from './PureComponentInReact';
 import UseMemoHookTut from './UseMemoHookTut';
 import RefInReact from './RefInReact';
 import UseRefInReact from './UseRefInReact';
+import ForwardRefInReact from './ForwardRefInReact';
 
 function App(){ 
-        return(
-            <div className='App'>
-                < UseRefInReact />
-            </div>
-        )
-      }
+    let inputRef = useRef(null);
+
+    function updateInput(){
+        console.log('Functional Call');
+        inputRef.current.value = "1000";
+        inputRef.current.style.color = "red";
+        inputRef.current.style.background = "black"
+        inputRef.current.focus();
+    }
+    return(
+        <div className='App'>
+            <h1> ForwardRef Hook in React js</h1>
+            <ForwardRefInReact ref={inputRef}/>
+            <button onClick={updateInput}> Update InputBox </button>
+        </div>
+    )
+    }
 
 export default App;
