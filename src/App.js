@@ -31,22 +31,12 @@ import UseMemoHookTut from './UseMemoHookTut';
 import RefInReact from './RefInReact';
 import UseRefInReact from './UseRefInReact';
 import ForwardRefInReact from './ForwardRefInReact';
+import ControlledComponentInReact from './ControlledComponentInReact';
 
 function App(){ 
-    let inputRef = useRef(null);
-
-    function updateInput(){
-        console.log('Functional Call');
-        inputRef.current.value = "1000";
-        inputRef.current.style.color = "red";
-        inputRef.current.style.background = "black"
-        inputRef.current.focus();
-    }
     return(
         <div className='App'>
-            <h1> ForwardRef Hook in React js</h1>
-            <ForwardRefInReact ref={inputRef}/>
-            <button onClick={updateInput}> Update InputBox </button>
+            <ControlledComponentInReact />
         </div>
     )
     }
