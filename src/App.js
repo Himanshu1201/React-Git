@@ -31,12 +31,12 @@ import UseMemoHookTut from './UseMemoHookTut';
 import RefInReact from './RefInReact';
 import UseRefInReact from './UseRefInReact';
 import ForwardRefInReact from './ForwardRefInReact';
-import ControlledComponentInReact from './ControlledComponentInReact';
+import UnControlledComponentInReact from './UnControlledComponentInReact';
 
 function App(){ 
     return(
         <div className='App'>
-            <ControlledComponentInReact />
+            <UnControlledComponentInReact />
         </div>
     )
     }
